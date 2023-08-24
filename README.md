@@ -1,42 +1,106 @@
-# Btech-Final-Year-Porject
+# Customer Churn Prediction Project Documentation
 
-# Project Description
+This documentation provides a comprehensive overview of the customer churn prediction project. It covers data preprocessing, feature selection, model building, evaluation, and business recommendations.
 
-## Importing Libraries
-The code begins by importing the necessary libraries such as pandas, matplotlib, and numpy.
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Data Preprocessing](#data-preprocessing)
+3. [Feature Selection](#feature-selection)
+4. [Model Building](#model-building)
+5. [Model Evaluation](#model-evaluation)
+6. [Business Recommendations](#business-recommendations)
+7. [Conclusion](#conclusion)
 
-## Reading and Preparing the Data
-The code reads a CSV file named "WA_Fn-UseC_-Telco-Customer-Churn.csv" using pandas' `read_csv()` function and stores it in a DataFrame called `df`. The code then performs various operations on the DataFrame:
-- Dropping the 'customerID' column using `df.drop()`.
-- Checking the data types of the columns using `df.dtypes`.
-- Converting the 'TotalCharges' column to numeric values using `pd.to_numeric()`.
-- Identifying any null values in the 'TotalCharges' column.
-- Filtering the DataFrame to exclude rows where 'TotalCharges' is null.
-- Converting the 'TotalCharges' column to numeric values again after removing null values.
+## 1. Introduction
 
-## Data Visualization
-The code uses matplotlib to create visualizations based on the churn prediction data. It creates two histograms:
-- The first histogram visualizes the distribution of the 'tenure' feature for customers with churn ('Churn=Yes') and without churn ('Churn=No').
-- The second histogram visualizes the distribution of the 'MonthlyCharges' feature for customers with churn and without churn.
+The primary objective of this project is to predict customer churn for a telecommunications company. Churn prediction is vital for businesses to identify customers who are likely to leave and take proactive measures to retain them.
 
-## Data Preprocessing
-- The code defines a function called `print_unique_col_values(df)` to print unique values for object-type columns in the DataFrame.
-- It replaces specific values in certain columns, such as 'No internet service' with 'No', using `df1.replace()`.
-- It converts binary categorical columns ('Yes'/'No') to numeric values (1/0) using `df1[col].replace()` in a loop.
-- It converts the 'gender' column values ('Female'/'Male') to numeric values using `df1['gender'].replace()`.
+## 2. Data Preprocessing
 
-## One-Hot Encoding
-The code uses pandas' `get_dummies()` function to perform one-hot encoding on categorical columns: 'InternetService', 'Contract', and 'PaymentMethod'. This process creates new columns representing the categories.
+Data preprocessing is crucial for creating accurate and reliable predictive models.
 
-## Feature Selection
-The code applies feature selection techniques to identify the top 20 features related to the target variable ('Churn'). It uses `SelectKBest` with chi-squared scoring to select the best features.
+### 2.1 Exploratory Data Analysis (EDA)
 
-## Model Training and Evaluation
-The code splits the data into training and testing sets using `train_test_split()`. It then builds and trains a neural network model using Keras. The model consists of multiple dense layers with ReLU activation and a sigmoid output layer. It is compiled with the Adam optimizer and binary cross-entropy loss. The model's training history is stored in the `history` variable.
+- Analyzed data distribution, statistics, and identified potential outliers.
+- Explored correlations between features to understand relationships.
 
-## Model Performance Evaluation
-The code evaluates the trained model on the test set using `model.evaluate()`. It also predicts the churn values for the test set using `model.predict()`. Then, it converts the predicted probabilities into binary predictions based on a threshold of 0.5. Several evaluation metrics such as accuracy, precision, recall, F1-score, and a confusion matrix are calculated and printed using sklearn's classification metrics.
+### 2.2 Data Cleaning
 
-## Additional Calculations
-The code performs some additional calculations related to the confusion matrix and churn rate, but without further context, it's not clear what these calculations are intended for.
+- Handled missing values through techniques like imputation or removal.
+- Detected and managed duplicate records in the dataset.
 
+### 2.3 Feature Scaling
+
+- Applied standardization or normalization to ensure features are on the same scale.
+- Used techniques like Min-Max scaling or Z-score normalization.
+
+### 2.4 Feature Engineering
+
+- Created new features based on domain knowledge or transformations of existing features.
+- Examples: total service usage, average call duration, etc.
+
+## 3. Feature Selection
+
+Feature selection enhances model efficiency and interpretability.
+
+### 3.1 Principal Component Analysis (PCA)
+
+- Applied PCA for dimensionality reduction while retaining essential variance.
+- Transformed original features into principal components.
+
+### 3.2 Statistical Methods
+
+- Utilized statistical tests like chi-squared or ANOVA to select features with significant impact.
+- Considered p-values and domain knowledge.
+
+### 3.3 Recursive Feature Elimination (RFE)
+
+- Executed RFE with different models to rank and select most relevant features.
+- Eliminated features with lower importance.
+
+## 4. Model Building
+
+Multiple machine learning models were trained to predict churn.
+
+### 4.1 Logistic Regression with PCA
+
+- Constructed a logistic regression model using PCA-transformed features.
+- Tuned hyperparameters using techniques like GridSearchCV.
+- Focused on interpretability and feature importance.
+
+### 4.2 Support Vector Machine (SVM) with PCA
+
+- Developed an SVM model using PCA for non-linear classification.
+- Optimized hyperparameters through methods like GridSearchCV.
+- Captured complex relationships between features.
+
+### 4.3 Decision Tree with PCA
+
+- Created a decision tree classifier with PCA-transformed features.
+- Fine-tuned hyperparameters using techniques like GridSearchCV.
+- Visualized the decision tree for insights.
+
+### 4.4 Random Forest with PCA
+
+- Built a random forest classifier incorporating PCA-transformed features.
+- Tuned hyperparameters via methods like GridSearchCV.
+- Leveraged ensemble learning for improved performance.
+
+## 5. Model Evaluation
+
+Model evaluation is crucial to gauge predictive performance.
+
+- Utilized metrics such as accuracy, precision, recall, F1-score, and ROC-AUC.
+- Employed techniques like cross-validation to assess generalization.
+
+## 6. Business Recommendations
+
+Insights from models drove actionable recommendations.
+
+- Focused on strategies to retain high-risk customers during action phase.
+- Designed personalized approaches based on predicted churn probabilities.
+- Aligned marketing efforts with identified influential features.
+
+## 7. Conclusion
+
+This project demonstrates the end-to-end process of customer churn prediction, from data preprocessing, feature selection, and model building to evaluation and business-oriented recommendations. The insights gained empower businesses to reduce churn rates and enhance customer satisfaction.
