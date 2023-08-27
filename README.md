@@ -2,6 +2,9 @@
 
 This documentation provides a comprehensive overview of the customer churn prediction project. It covers data preprocessing, feature selection, model building, evaluation, and business recommendations.
 
+## 1. Introduction
+- data link `https://www.kaggle.com/datasets/mickelloknathislam/churn`
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Data Preprocessing](#data-preprocessing)
