@@ -105,5 +105,5 @@ Insights from models drove actionable recommendations.
 - Aligned marketing efforts with identified influential features.
 
 ## 7. Conclusion
-
+hhhhhhhhhh
 This project demonstrates the end-to-end process of customer churn prediction, from data preprocessing, feature selection, and model building to evaluation and business-oriented recommendations. The insights gained empower businesses to reduce churn rates and enhance customer satisfaction.
