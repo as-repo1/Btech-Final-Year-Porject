@@ -5,6 +5,10 @@ This project covers the entire customer churn prediction process, including data
 ## 1. Introduction
 - `data link` : https://www.kaggle.com/datasets/mickelloknathislam/churn
 
+# run this:
+  ```streamlit run deploy.py```:
+  ```streamlit run main.py```
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Data Preprocessing](#data-preprocessing)
@@ -105,5 +109,6 @@ Insights from models drove actionable recommendations.
 - Aligned marketing efforts with identified influential features.
 
 ## 7. Conclusion
-hhhhhhhhhh
-This project demonstrates the end-to-end process of customer churn prediction, from data preprocessing, feature selection, and model building to evaluation and business-oriented recommendations. The insights gained empower businesses to reduce churn rates and enhance customer satisfaction.
+
+- This project demonstrates the end-to-end process of customer churn prediction, from data preprocessing, feature selection, and model building to evaluation and business-oriented recommendations. The insights gained empower businesses to reduce churn rates and enhance customer satisfaction.
+
