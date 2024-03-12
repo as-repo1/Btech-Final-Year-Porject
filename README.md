@@ -6,8 +6,9 @@ This project covers the entire customer churn prediction process, including data
 - `data link` : https://www.kaggle.com/datasets/mickelloknathislam/churn
 
 # run this:
-  - ```streamlit run deploy.py```
-  - ```streamlit run main.py```
+  - ```pip install streamlit``` **install the streamlit first**
+  - ```streamlit run main.py``` **run this one**
+  - ```streamlit run deploy.py``` **avoid running this one**
 
 ## Table of Contents
 1. [Introduction](#introduction)
