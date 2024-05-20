@@ -33,15 +33,18 @@ with st.container():
     
     # MOU fields
     st.subheader("Minutes of Usage (MOU)")
-    onnet_mou_6 = col1.number_input("On-Net (6th Month)")
-    onnet_mou_7 = col2.number_input("On-Net (7th Month)")
-    onnet_mou_8 = col3.number_input("On-Net (8th Month)")
+    onnet_mou_6 = col1.number_input("On-Net (6th Month) (ARPU)")
+    onnet_mou_7 = col2.number_input("On-Net (7th Month) (ARPU)")
+    onnet_mou_8 = col3.number_input("On-Net (8th Month) (ARPU)")
+
     offnet_mou_6 = col1.number_input("Off-Net (6th Month)")
     offnet_mou_7 = col2.number_input("Off-Net (7th Month)")
     offnet_mou_8 = col3.number_input("Off-Net (8th Month)")
+
     roam_ic_mou_6 = col1.number_input("Roaming Incoming Calls (6th Month)")
     roam_ic_mou_7 = col2.number_input("Roaming Incoming Calls (7th Month)")
     roam_ic_mou_8 = col3.number_input("Roaming Incoming Calls (8th Month)")
+    
     roam_og_mou_6 = col1.number_input("Roaming Outgoing Calls (6th Month)")
     roam_og_mou_7 = col2.number_input("Roaming Outgoing Calls (7th Month)")
     roam_og_mou_8 = col3.number_input("Roaming Outgoing Calls (8th Month)")
