@@ -3,7 +3,7 @@
 This project covers the entire customer churn prediction process, including data preprocessing, feature selection, model development, evaluation, and actionable insights. It enables businesses to lower churn rates and improve customer satisfaction.
 
 ## 1. Introduction
-- `data link` : [click here!](https://www.kaggle.com/datasets/vijaysrikanth/telecom-churn-data-set-for-the-south-asian-market)
+- `data link` : [HERE !](https://www.kaggle.com/datasets/vijaysrikanth/telecom-churn-data-set-for-the-south-asian-market)
 
 # run this:
 - cd into streamlit-files dir
