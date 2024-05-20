@@ -5,7 +5,7 @@ This project covers the entire customer churn prediction process, including data
 ## 1. Introduction
 - `data link` : [HERE !](https://www.kaggle.com/datasets/vijaysrikanth/telecom-churn-data-set-for-the-south-asian-market)
 
-# run this:
+# Run the streamlit app:
 - cd into streamlit-files dir
   - ```pip install streamlit``` **install the streamlit first**
   - ```streamlit run main.py``` **run this one**
