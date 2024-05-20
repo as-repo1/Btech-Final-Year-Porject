@@ -25,12 +25,14 @@ with col2:
   std_og_t2o_mou=st.number_input("Minutes of Usage of STD Outgoing Calls to Other Operator")
 with col3:
   loc_ic_t2o_mou=st.number_input("Minutes of Usage of Local Incoming Calls from Other Operator")
+
 with col1:
   arpu_6=st.number_input("Average revenue per unit in 6th month")
 with col2:
   arpu_7=st.number_input("Average revenue per unit in 7th month")
 with col3:
   arpu_8=st.number_input("Average revenue per unit in 8th month")
+
 with col1:
   onnet_mou_6=st.number_input("Minites of usage of all kind of call in same network month of 6_")
 with col2:
@@ -63,9 +65,9 @@ with col3:
   loc_og_t2t_mou_8=st.number_input("Minites of usage of Local outgoing calls within same operator month of 8")
 with col1:
   loc_og_t2m_mou_6=st.number_input("Minites of usage of local outgoing calls to mobile in month of 6 ")
-with col2:
+with col2: 
   loc_og_t2m_mou_7=st.number_input("Minites of usage of local outgoing calls to mobile in month of 7 ")
-with col3:
+with col3: 
   loc_og_t2m_mou_8=st.number_input("Minites of usage of local outgoing calls to mobile in month of 8 ")
 X=[[loc_og_t2o_mou,std_og_t2o_mou,loc_ic_t2o_mou,arpu_6,arpu_7,arpu_8,onnet_mou_6,onnet_mou_7,onnet_mou_8,offnet_mou_6,offnet_mou_7,offnet_mou_8,roam_ic_mou_6,roam_ic_mou_7,roam_ic_mou_8,roam_og_mou_6,roam_og_mou_7,roam_og_mou_8,loc_og_t2t_mou_6,loc_og_t2t_mou_7,loc_og_t2t_mou_8,loc_og_t2m_mou_6,loc_og_t2m_mou_7,loc_og_t2m_mou_8]]
 if st.button("Click here to Predict"):

@@ -2,20 +2,6 @@ import streamlit as st
 import pickle
 import numpy as np
 
-#background image
-st.markdown(
-    """
-    <style>
-    body {
-        background-image: url("bg.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 #title and subtitle
 st.title("Telecom Churn Analysis")
