@@ -25,11 +25,10 @@ with st.container():
     # Local Incoming Call from Other Operator
     loc_ic_t2o_mou = col3.number_input("Local Incoming Calls from Other Operator (MOU)")
     
-    # ARPU fields
     st.subheader("Average Revenue Per Unit (ARPU)")
-    arpu_6 = col1.number_input("6th Month")
-    arpu_7 = col2.number_input("7th Month")
-    arpu_8 = col3.number_input("8th Month")
+    with col1: arpu_6 = col1.number_input("6th Month (ARPU)")
+    with col2: arpu_7 = col2.number_input("7th Month (ARPU)")
+    with col3: arpu_8 = col3.number_input("8th Month (ARPU)")
     
     # MOU fields
     st.subheader("Minutes of Usage (MOU)")
