@@ -33,9 +33,9 @@ with st.container():
     
     # MOU fields
     st.subheader("Minutes of Usage (MOU)")
-    onnet_mou_6 = col1.number_input("On-Net (6th Month) (ARPU)")
-    onnet_mou_7 = col2.number_input("On-Net (7th Month) (ARPU)")
-    onnet_mou_8 = col3.number_input("On-Net (8th Month) (ARPU)")
+    onnet_mou_6 = col1.number_input("On-Net (6th Month)")
+    onnet_mou_7 = col2.number_input("On-Net (7th Month)")
+    onnet_mou_8 = col3.number_input("On-Net (8th Month)")
 
     offnet_mou_6 = col1.number_input("Off-Net (6th Month)")
     offnet_mou_7 = col2.number_input("Off-Net (7th Month)")

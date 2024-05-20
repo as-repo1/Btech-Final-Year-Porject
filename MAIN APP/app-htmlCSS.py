@@ -31,9 +31,9 @@ with st.container():
     
     # ARPU fields
     st.subheader("Average Revenue Per Unit (ARPU)")
-    with col1: arpu_6 = col1.number_input("6th Month (ARPU)")
-    with col2: arpu_7 = col2.number_input("7th Month (ARPU)")
-    with col3: arpu_8 = col3.number_input("8th Month (ARPU)")
+    with col1: arpu_6 = col1.number_input("6th Month")
+    with col2: arpu_7 = col2.number_input("7th Month")
+    with col3: arpu_8 = col3.number_input("8th Month")
     
     # MOU fields
     st.subheader("Minutes of Usage (MOU)")
