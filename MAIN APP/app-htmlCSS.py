@@ -1,30 +1,20 @@
 import streamlit as st
 import pickle
-import numpy as np
-
-# Set background image
-st.markdown(
-    """
-    <style>
-    body {
-        background-image: url("bg.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-# Title and subtitle
-st.title("Telecom Churn Analysis")
-st.write("Predict whether a customer will churn based on their call usage patterns.")
 
 # Load pre-trained models
-loaded_model1 = pickle.load(open('scaler.pkl', 'rb'))
-loaded_model2 = pickle.load(open('pca.pkl', 'rb'))
-loaded_model3 = pickle.load(open('final_model.pkl', 'rb'))
+loaded_model1 = pickle.load(open('scaler.pk1', 'rb'))
+loaded_model2 = pickle.load(open('pca1.pk1', 'rb'))
+loaded_model3 = pickle.load(open('final_model1.pk1', 'rb'))
+
+# Render HTML content from index.html
+with open("index.html", "r") as f:
+    index_html = f.read()
+st.markdown(index_html, unsafe_allow_html=True)
+
+# Render CSS content from styles.css
+with open("styles.css", "r") as f:
+    styles_css = f.read()
+st.markdown(f"<style>{styles_css}</style>", unsafe_allow_html=True)
 
 # Use tabs
 with st.container():
