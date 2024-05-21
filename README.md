@@ -11,6 +11,8 @@ This project covers the entire customer churn prediction process, including data
   - ```streamlit run main.py``` **run this one**
   - ```streamlit run deploy.py``` **avoid running this one**
 
+![Churn Prediction Demo](MAIN-APP/demo.png)
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Data Preprocessing](#data-preprocessing)
