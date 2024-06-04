@@ -5,7 +5,7 @@ This project covers the entire customer churn prediction process, including data
 - members :
   - Abhinaba Sarkar
   - Dipanjan Mahata
-  - Uttam Soren
+  - Uttam Sor
   - Arnab Pal 
 ## 1. Introduction
 
@@ -62,11 +62,6 @@ Data preprocessing is crucial for creating accurate and reliable predictive mode
 
 Feature selection enhances model efficiency and interpretability.
 
-### 3.1 Principal Component Analysis (PCA)
-
-- Applied PCA for dimensionality reduction while retaining essential variance.
-- Transformed original features into principal components.
-
 ### 3.2 Statistical Methods
 
 - Utilized statistical tests like chi-squared or ANOVA to select features with significant impact.
@@ -83,27 +78,9 @@ Multiple machine learning models were trained to predict churn.
 
 ### 4.1 Logistic Regression with PCA
 
-- Constructed a logistic regression model using PCA-transformed features.
+- Constructed a logistic regression model.
 - Tuned hyperparameters using techniques like GridSearchCV.
 - Focused on interpretability and feature importance.
-
-### 4.2 Support Vector Machine (SVM) with PCA
-
-- Developed an SVM model using PCA for non-linear classification.
-- Optimized hyperparameters through methods like GridSearchCV.
-- Captured complex relationships between features.
-
-### 4.3 Decision Tree with PCA
-
-- Created a decision tree classifier with PCA-transformed features.
-- Fine-tuned hyperparameters using techniques like GridSearchCV.
-- Visualized the decision tree for insights.
-
-### 4.4 Random Forest with PCA
-
-- Built a random forest classifier incorporating PCA-transformed features.
-- Tuned hyperparameters via methods like GridSearchCV.
-- Leveraged ensemble learning for improved performance.
 
 ## 5. Model Evaluation
 
