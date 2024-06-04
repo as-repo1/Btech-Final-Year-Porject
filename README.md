@@ -63,14 +63,7 @@ Data preprocessing is crucial for creating accurate and reliable predictive mode
 
 Feature selection enhances model efficiency and interpretability.
 
-### 3.2 Statistical Methods
-
-- Utilized statistical tests like chi-squared or ANOVA to select features with significant impact.
-- Considered p-values and domain knowledge.
-
-### 3.3 Recursive Feature Elimination (RFE)
-
-- Executed RFE with different models to rank and select most relevant features.
+- Selecting the features which contain less null or missing value.
 - Eliminated features with lower importance.
 
 ## 4. Model Building
@@ -80,7 +73,6 @@ Multiple machine learning models were trained to predict churn.
 ### 4.1 Logistic Regression
 
 - Constructed a logistic regression model.
-- Tuned hyperparameters using techniques like GridSearchCV.
 - Focused on interpretability and feature importance.
 
 ## 5. Model Evaluation
