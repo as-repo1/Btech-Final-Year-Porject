@@ -2,18 +2,25 @@
 
 This project covers the entire customer churn prediction process, including data preprocessing, feature selection, model development, evaluation, and actionable insights. It enables businesses to lower churn rates and improve customer satisfaction.
 
+- members :
+  - Abhinaba Sarkar
+  - Dipanjan Mahata
+
 ## 1. Introduction
+
 - `data link` : [HERE !](https://www.kaggle.com/datasets/vijaysrikanth/telecom-churn-data-set-for-the-south-asian-market)
 
 # Run the streamlit app:
+
 - cd into streamlit-files dir
-  - ```pip install streamlit``` **install the streamlit first**
-  - ```streamlit run main.py``` **run this one**
-  - ```streamlit run deploy.py``` **avoid running this one**
+  - ``pip install streamlit`` **install the streamlit first**
+  - ``streamlit run main.py`` **run this one**
+  - ``streamlit run deploy.py`` **avoid running this one**
 
 ![Churn Prediction Demo](MAIN-APP/demo.png)
 
 ## Table of Contents
+
 1. [Introduction](#introduction)
 2. [Data Preprocessing](#data-preprocessing)
 3. [Feature Selection](#feature-selection)
@@ -115,4 +122,3 @@ Insights from models drove actionable recommendations.
 ## 7. Conclusion
 
 - This project demonstrates the end-to-end process of customer churn prediction, from data preprocessing, feature selection, and model building to evaluation and business-oriented recommendations. The insights gained empower businesses to reduce churn rates and enhance customer satisfaction.
-
