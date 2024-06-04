@@ -5,6 +5,7 @@ This project covers the entire customer churn prediction process, including data
 - members :
   - Abhinaba Sarkar
   - Dipanjan Mahata
+  - Uttam Soren
 
 ## 1. Introduction
 
