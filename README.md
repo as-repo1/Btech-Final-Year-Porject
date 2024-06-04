@@ -76,7 +76,7 @@ Feature selection enhances model efficiency and interpretability.
 
 Multiple machine learning models were trained to predict churn.
 
-### 4.1 Logistic Regression with PCA
+### 4.1 Logistic Regression
 
 - Constructed a logistic regression model.
 - Tuned hyperparameters using techniques like GridSearchCV.
