@@ -10,7 +10,7 @@ st.write("Predict whether a customer will churn based on their call usage patter
 #pre-trained models
 loaded_model1 = pickle.load(open('scaler.pk1', 'rb'))
 loaded_model2 = pickle.load(open('pca1.pk1', 'rb'))
-loaded_model3 = pickle.load(open('final_model1.pk1', 'rb'))
+loaded_model3 = pickle.load(open('predict_model.pk1', 'rb'))
 
 # Use tabs
 with st.container():
