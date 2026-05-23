@@ -108,12 +108,12 @@ Raw Data (100K+ records, 200+ columns)
         ▼
 ┌─────────────────────────────┐
 │   1. DATA PREPROCESSING     │
-│   • Drop columns > 30%     │
-│     missing values           │
+│   • Drop columns > 30%      │
+│     missing values          │
 │   • Remove date & constant  │
-│     columns                  │
+│     columns                 │
 │   • Handle row-level nulls  │
-│     (MOU groups by month)    │
+│     (MOU groups by month)   │
 └─────────────┬───────────────┘
               ▼
 ┌─────────────────────────────┐
@@ -127,7 +127,7 @@ Raw Data (100K+ records, 200+ columns)
 │   3. CHURN TAGGING          │
 │   • Churn = 1 if month 9:   │
 │     no calls + no data      │
-│   • Drop month 9 columns   │
+│   • Drop month 9 columns    │
 └─────────────┬───────────────┘
               ▼
 ┌─────────────────────────────┐
@@ -340,5 +340,5 @@ This project was developed as part of the B.Tech Final Year curriculum.
 ---
 
 <p align="center">
-  <i>Built with ❤️ for better customer retention</i>
+  <i>Built with college memories</i>
 </p>
