@@ -1,0 +1,46 @@
+# Git
+.git
+.gitignore
+
+# Data (24MB zip — not needed at runtime)
+data/
+
+# Notebooks (not needed at runtime)
+*.ipynb
+old-notebooks/
+
+# Documentation
+college/
+README.md
+LICENSE
+
+# Frontend (Flask template — not used by Streamlit)
+Front-end/
+
+# Streamlit-files (alternate apps — not the primary)
+streamlit-files/
+
+# Root model (duplicate — MAIN-APP has its own)
+lr_model.pkl
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.yml
+Dockerfile
+.dockerignore

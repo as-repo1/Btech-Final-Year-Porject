@@ -24,6 +24,7 @@
 - [Model Performance](#model-performance)
 - [Getting Started](#getting-started)
 - [Running the App](#running-the-app)
+- [Docker](#docker)
 - [Business Recommendations](#business-recommendations)
 - [Tech Stack](#tech-stack)
 
@@ -60,6 +61,10 @@ Btech-Final-Year-Project/
 │
 ├── the-main-notebook.ipynb    # 📓 Complete ML pipeline (181 cells)
 ├── lr_model.pkl               # 🤖 Trained Logistic Regression model
+├── requirements.txt           # 📦 Python dependencies
+├── Dockerfile                 # 🐳 Docker container config
+├── docker-compose.yml         # 🐳 Docker Compose orchestration
+├── .dockerignore              # 🐳 Docker build exclusions
 │
 ├── MAIN-APP/                  # 🚀 Primary application (recommended)
 │   ├── app.py                 # Streamlit app (main — run this)
@@ -200,7 +205,7 @@ git clone https://github.com/your-username/Btech-Final-Year-Porject.git
 cd Btech-Final-Year-Porject
 
 # Install dependencies
-pip install streamlit scikit-learn numpy pandas imbalanced-learn
+pip install -r requirements.txt
 ```
 
 For the Gradio app variant:
@@ -260,6 +265,44 @@ python gradio-host.py
 ```
 
 Generates a shareable public URL — great for demos without deployment.
+
+---
+
+## Docker
+
+Run the app in a container — no Python setup required.
+
+### Quick Start
+
+```bash
+# Build and run with Docker Compose (recommended)
+docker compose up --build
+```
+
+Then open **http://localhost:8501** in your browser.
+
+### Manual Docker Commands
+
+```bash
+# Build the image
+docker build -t churn-prediction .
+
+# Run the container
+docker run -p 8501:8501 churn-prediction
+```
+
+### What's in the Container
+
+- **Base image:** `python:3.11-slim` (~200MB total)
+- **Includes:** Only `MAIN-APP/` and `requirements.txt` (data, notebooks, and docs excluded via `.dockerignore`)
+- **Healthcheck:** Auto-monitors the Streamlit server every 30s
+- **Auto-restart:** Container restarts on failure (`unless-stopped` policy)
+
+### Stop the Container
+
+```bash
+docker compose down
+```
 
 ---
 
